@@ -18,4 +18,13 @@
 		<arg name="robot" value="$(arg robot)"/>
 	</include>
 
+	<!-- start footprint observer node for navigation -->
+	<node pkg="cob_footprint_observer" type="footprint_observer" name="footprint_observer" output="screen">
+		<rosparam file="$(find cob_hardware_config)/$(arg robot)/config/footprint_observer_params.yaml" command="load" />
+		<remap from="~robot_footprint" to="/move_base/local_costmap/footprint" />		
+	</node>
+	<node pkg="topic_tools" type="relay" name="footprint_relay" args="/move_base/local_costmap/footprint /move_base/global_costmap/footprint"/>
+	
+	<include file="$(find cob_navigation_global)/launch/voxel_grid_filter.xml" />
+
 </launch>
