@@ -1,3 +1,8 @@
+controller_patience: 15.0
+oscillation_timeout: 5.0
+planner_frequency: 0.0
+shutdown_costmaps: false
+
 TrajectoryPlannerROS:
   max_vel_x: 0.5
   min_vel_x: -0.5
@@ -11,3 +16,5 @@ TrajectoryPlannerROS:
   acc_lim_y: 0.3
 
   holonomic_robot: true
+
+

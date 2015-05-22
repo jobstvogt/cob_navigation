@@ -12,6 +12,7 @@
 	<include file="$(find cob_navigation_global)/launch/amcl_node.xml" >
 		<arg name="robot" value="$(arg robot)"/>
 	</include>
+	<node pkg="rosservice" type="rosservice" name="global_loc" args="call --wait /global_localization"/>
 	
 	<!--- Run move base -->
 	<include file="$(find cob_navigation_global)/launch/2dnav_ros_dwa.xml" >
