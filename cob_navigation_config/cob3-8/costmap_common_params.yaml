@@ -14,7 +14,7 @@ raytrace_range: 3.0
 max_obstacle_height: 1.6
 
 #footprint: [[0.55,0.35],[-0.55,0.35],[-0.55,-0.35],[0.55,-0.35]]
-footprint: [[0.5, 0.35], [0.5, -0.35], [-0.5, -0.35],[-0.5, 0.35]] #[m]
+footprint: [[0.53, 0.35], [0.53, -0.35], [-0.53, -0.35],[-0.53, 0.35]] #[m]
 
 obstacles:
   observation_sources: laser_scan_front laser_scan_rear laser_scan_top cloud_cam3d
@@ -28,8 +28,8 @@ obstacles:
   cloud_cam3d: {sensor_frame: cam3d_rgb_optical_frame, topic: /voxel_grid/output, data_type: PointCloud2, marking: true, clearing: true, min_obstacle_height: 0.3, observation_persistence: 5.0}
 
 inflater:
-  inflation_radius: 0.65
+  inflation_radius: 0.70
 
 static_map:
-  inflation_radius: 0.65
+  inflation_radius: 0.70
   

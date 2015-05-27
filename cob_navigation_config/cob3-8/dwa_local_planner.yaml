@@ -2,11 +2,11 @@ acc_lim_th: 0.3
 acc_lim_x: 0.3
 acc_lim_y: 0.3
 
-max_vel_x: 0.7
-min_vel_x: -0.7
+max_vel_x: 0.45
+min_vel_x: -0.45
 
-max_vel_y: 0.15
-min_vel_y: -0.15
+max_vel_y: 0.2
+min_vel_y: -0.2
 
 max_trans_vel: 0.5
 min_trans_vel: 0.01
@@ -22,7 +22,7 @@ min_in_place_rotational_vel: 0.03
 sim_time: 1.7
 sim_granularity: 0.025
 
-goal_distance_bias: 5.0
+goal_distance_bias: 15.0
 path_distance_bias: 30.0
 occdist_scale: 0.01
 
@@ -48,5 +48,5 @@ trans_stopped_vel: 0.01
 
 penalize_negative_x: false
 
-publish_cost_grid_pc: true
-publish_traj_pc: true
+#publish_cost_grid_pc: true
+#publish_traj_pc: true
