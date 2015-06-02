@@ -1,20 +1,13 @@
-controller_patience: 15.0
-oscillation_timeout: 5.0
-planner_frequency: 0.0
-shutdown_costmaps: false
-
 TrajectoryPlannerROS:
-  max_vel_x: 0.5
-  min_vel_x: -0.5
+  max_vel_x: 0.3
+  min_vel_x: 0.01
   max_rotational_vel: 0.3 # 0.04
-  max_vel_theta: 0.5 #0.8
+  max_vel_theta: 0.8
   min_in_place_rotational_vel: 0.01
-  publish_cost_grid_pc: true
 
-  acc_lim_th: 0.3
-  acc_lim_x: 0.3
-  acc_lim_y: 0.3
+  acc_lim_th: 1.5
+  acc_lim_x: 1.5
+  acc_lim_y: 1.5
 
   holonomic_robot: true
-
 
