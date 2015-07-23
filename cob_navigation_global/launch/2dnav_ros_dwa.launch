@@ -25,8 +25,10 @@
 		<remap from="~robot_footprint" to="/move_base/local_costmap/footprint" />		
 	</node>
 	<node pkg="topic_tools" type="relay" name="footprint_relay" args="/move_base/local_costmap/footprint /move_base/global_costmap/footprint"/>
-	
-	<include file="$(find cob_navigation_global)/launch/voxel_grid_filter.xml" />
+	<!--
+	<include file="$(find cob_navigation_global)/launch/voxel_grid_filter.xml" />-->
 
-	<node pkg="rosservice" type="rosservice" name="global_loc" args="call --wait /global_localization"/>
+	
+
+
 </launch>
